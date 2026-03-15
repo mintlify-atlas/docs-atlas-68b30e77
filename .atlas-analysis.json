@@ -1,0 +1,66 @@
+{
+  "projectType": "saas",
+  "projectName": "Pedal",
+  "projectDescription": "Pedal is a consumer-facing car rental web platform that allows users in Peru to browse vehicles by brand, select pickup locations and times, and make reservations.",
+  "theme": "almond",
+  "primaryColor": "#273852",
+  "lightColor": "#ff9e0b",
+  "darkColor": "#242e3f",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["introduction", "quickstart"]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/vehicle-catalog",
+              "features/booking-form",
+              "features/locations",
+              "features/services"
+            ]
+          },
+          {
+            "group": "Website Guide",
+            "pages": [
+              "guide/navigation",
+              "guide/how-it-works",
+              "guide/contact"
+            ]
+          },
+          {
+            "group": "Reference",
+            "pages": [
+              "reference/vehicle-types",
+              "reference/pricing",
+              "reference/faq"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Vehicle catalog with brand filtering (Honda, Chevrolet, Volvo, Mitsubishi, Volkswagen)",
+    "Interactive booking form with location, date, and time selection",
+    "Multiple pickup and drop-off locations across Lima (Miraflores, San Isidro, San Miguel)",
+    "Car type categories: Compact, Sedan, SUV, Pickup",
+    "Animated loading screen and smooth scroll navigation",
+    "Service coverage map showing available regions in Peru",
+    "24/7 customer support and strategic location network",
+    "Newsletter subscription for promotions",
+    "Multi-language data attributes (Spanish/English) for i18n readiness"
+  ],
+  "publicApiSurface": [
+    "Booking form: vehicle type, usage date, pickup time/location, return time/location",
+    "Brand filter buttons: honda, chevrolet, volvo, mitsubishi, volkswagen",
+    "Department modal: Lima, Ica, Arequipa, Ancash, Piura",
+    "Newsletter subscription email form",
+    "Google Maps embed for Lima service area",
+    "Navigation sections: #home, #howDoesItWork, #topCars, #service, #contact"
+  ]
+}
