@@ -1,0 +1,81 @@
+---
+title: "Booking form"
+description: "Learn how to use the Pedal booking form to reserve your rental vehicle."
+---
+
+The Pedal booking form lets you configure and submit a vehicle reservation in a single step. You specify the type of car you need, the dates and times, and the pickup and return locations. Once submitted, Pedal processes your request and confirms availability.
+
+## Form fields
+
+<ParamField path="tipo_carro" type="string" required>
+  The category of vehicle you want to rent. Select one of the four available types:
+
+  - **Compacto** — compact city cars (e.g., Chevrolet Spark, Volkswagen Polo, Mitsubishi Mirage)
+  - **Sedán** — mid-size sedans (e.g., Honda Civic, Honda Accord, Mitsubishi Lancer)
+  - **SUV** — sport utility vehicles (e.g., Honda CR-V, Volvo XC40, Volkswagen Tiguan)
+  - **Camioneta** — large 4×4 trucks and SUVs (e.g., Chevrolet Trailblazer, Mitsubishi Pajero, Volvo XC90)
+</ParamField>
+
+<ParamField path="fecha_uso" type="string" required>
+  The date on which you want to pick up the vehicle. Use the date picker to select a calendar date. The field accepts dates in the format `DD/MM/YYYY`.
+</ParamField>
+
+<ParamField path="hora_recoger" type="string" required>
+  The time at which you will collect the vehicle at the pickup location. Use the time picker to select an hour and minute.
+</ParamField>
+
+<ParamField path="lugar_recoger" type="string" required>
+  The Lima district where you will collect the vehicle. Choose one of the three available pickup points:
+
+  - **Miraflores**
+  - **San Isidro**
+  - **San Miguel**
+</ParamField>
+
+<ParamField path="hora_devolver" type="string" required>
+  The time at which you will return the vehicle at the drop-off location. Use the time picker to select an hour and minute.
+</ParamField>
+
+<ParamField path="lugar_devolver" type="string" required>
+  The Lima district where you will return the vehicle. Choose one of the three available drop-off points:
+
+  - **Miraflores**
+  - **San Isidro**
+  - **San Miguel**
+
+  The return location does not need to match the pickup location.
+</ParamField>
+
+## How to complete the booking form
+
+<Steps>
+  <Step title="Select a car type">
+    Open the **Tipo de carro** dropdown and choose the vehicle category that fits your trip: Compacto, Sedán, SUV, or Camioneta. If you have already identified a specific model in the vehicle catalog, match its category here.
+  </Step>
+  <Step title="Pick your rental date">
+    Click the **Fecha de uso** date field and select the day you want to pick up the vehicle from the calendar. The form will not accept past dates.
+  </Step>
+  <Step title="Set pickup time and location">
+    Use the **Hora de recoger** time picker to specify when you will arrive. Then select your preferred district — Miraflores, San Isidro, or San Miguel — from the **Lugar de recoger** dropdown.
+  </Step>
+  <Step title="Set return time and location">
+    Use the **Hora de devolver** time picker to specify when you will return the car. Select the drop-off district from the **Lugar de devolver** dropdown. You may return to a different location from your pickup point.
+  </Step>
+  <Step title="Submit the form">
+    Review all fields, then click the **Reservar** (or equivalent submit) button. Pedal will validate your inputs and process your reservation request.
+  </Step>
+</Steps>
+
+## After submission
+
+<Note>
+  After submitting the form, Pedal's team reviews availability for the selected vehicle type, date, and location. You will be contacted via phone or email to confirm the reservation details and arrange payment.
+</Note>
+
+<Tip>
+  If you need a vehicle for multiple days, note your intended return date when contacted by the Pedal team, as the online form captures the pickup date only. The total cost will be calculated based on the number of rental days.
+</Tip>
+
+<Info>
+  All three pickup and return locations — Miraflores, San Isidro, and San Miguel — are within Lima. If you need service in another region (Ica, Arequipa, Ancash, or Piura), contact Pedal directly at serviciopedal@pedal.pe or call (511) 204 4400.
+</Info>
